@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nayt | Frasi Più famose</title>
+    <!--======= style and javascript link ========-->
+    <link rel="stylesheet" href="./css/frasi.css">
+    <link rel="stylesheet" href="./css/utili.css">
+    <link rel="shortcut icon" href="./img/LOGO.png" type="image/x-icon">
+    <!--======== bootstrap =========-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <!--========= line icons ======-->
+    <link rel="stylesheet" href="https://cdn.lineicons.com/1.0.1/LineIcons.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <!--===== JQUERY LINK ======-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- NAVBAR BUTTON SCRIPT-->
+    <script src="./btn.js"></script>
+       <script>
+       <!--
+        function fraseRandom(){
+            document.getElementById("random_txt").style.border= "1px solid rgba(255,255,255,0.10)";
+            var frasi=['<span class="gold">"</span>Fare rime a volte è come prendere aria, qualcuno dovrebbe farne a meno, quindi bella<span class="gold">"-Oh 9od</span>',
+             '<span class="gold">"</span> Ho 23 anni dovrei parlare di f**a e di canne Quanto voglio divertirmi coi miei amici alle spalle Quanto sono fighi perché alcuni dietro alle sbarre Io non riesco a divertirmi, ho solo me e mia madre <span class="gold">"-Fame (ft. Madman)</span>', 
+             '<span class="gold">"</span>Non hai testi, sono spessi come un foglio, se mi rispondessi Ca**o, sarei la tua eclissi, freh<span class="gold">"-Quando non ci crede nessuno</span>',
+             '<span class="gold">"</span>La mia vita è passione, sono il pastore, Di sta roba detta rap, prendo il bastone<span class="gold">"-Gli occhi della tigre</span>',
+             '<span class="gold">"</span>Il destino ripaga ma soltanto se tu sai davvero chi sei <span class="gold">"-Due scemi</span>',
+             '<span class="gold">"</span>Sono solo un pazzo e parlo, tanto, no non piango. Un uomo non piange e un ragazzo muore per diventarlo <span class="gold">"-Come vuoi</span>',
+             '<span class="gold">"</span>Se vieni a tavola, t’apparecchiamo vibo in scatola, ti rompi le mani le gambe le orecchie i capelli ti vola una scapola ci rivediamo mai<span class="gold">"-Passala</span>',
+             '<span class="gold">"</span>Non è che se rappi veloce sei bravo<span class="gold">"-Passala</span>'
+            ];
+    
+            var rnd=Math.random() *frasi.length;
+            var rnd= Math.floor(rnd);
+            var par=frasi[rnd];
+            document.getElementById("random_txt").innerHTML= par ;
+        } -->
+        
+       /* function inviaLike(){
+        	btn = document.getElementById("btnLike").value;
+        	$.ajax({
+        		url: "like",
+        		data: {
+        			"btnLike": btn;
+        		},
+        		type: "GET",
+        		success: function(response){
+        			alert("t'apposto");
+        		},
+        		error: function(xhr){
+        			alert("non funge");
+        		}
+        	});
+        	
+        } */
+        </script> 
+</head>
+<body>
+    
+        <nav class="navbar navbar-expand-lg" id="navbar">
+            <button class="navbar-toggler" id="btnLogo" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <img src="./img/LOGOBLACK.png" width="32px" height="32px">
+              </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active" id="home">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item" id="bio">
+                        <a class="nav-link" href="biografia.html">Biografia</a>
+                    </li>
+                    <li class="nav-item" id="frasi">
+                        <a class="nav-link" href="frasi.html">Frasi</a>
+                    </li>
+                    <li class="nav-item" id="altro">
+                        <form action="commenti" method="get">
+                            <button type="submit" class="nav-link nav-btn" style="margin: auto !important">Altro</button>
+                        </form>
+                    </li>
+                    <li class="nav-item" id="user">
+                        <a class="nav-link" href="user.html">Login</a>
+                    </li>
+                    <li class="nav-item" id="pag_utente">
+                        	<form action="login" method="post">
+	                           <button type="submit" class="nav-btn nav-link" style="margin: auto !important" name="btnLog" value="1">Utente</button>
+                        	</form>
+                        </li>
+                </ul>
+                <a class="brand" style="margin: 0; float: none; text-align:center; display: none !important" href="index.html">
+                    <img src="./img/LOGOBLACK.png" width="50px" height="50px">
+                  </a>
+            </div>
+        </nav>
+
+
+    <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <h1 class="titolo_dati">RAPTUS</h1>
+            <!-- scheda raptus 1-->
+            <div class="accordion" id="a1">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h2 class="mb-0">
+                            <button class="btn  collapsed" type="button">
+                                <img src="./img/old_raptus.jpg" alt="raptus1" width="96px" height="96px" >
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="raptus1" class="collapse show">
+                        <div class="card-body">
+                            <p class="frase"><span class="gold">"</span>Ama, Odia, Tradisci, Svuota<span class="gold">"</span>
+                                <span class="gold">-Raptus</span></p>
+                            <p class="frase"><span class="gold">"</span>I miei coetani hanno perso la speranza,
+                                hanno perso la loro prospettiva,
+                                lanciati da una manciate di regole inventate da qualcun altro,
+                                sminuiti dal sistema<span class="gold">"</span><span class="gold">-Raptus</span></p>
+                            <p class="frase"><span class="gold">"</span>Vaglielo a spiegare,
+                                che ora sei un uomo non ti puoi piegare, una famiglia deve poter mangiare<span class="gold">"</span> <span class="gold">-Mama</span></p>
+                            <p class="frase"><span class="gold">"</span>Ho visto come tutto ritorna, come la paura prende forma,
+                            come gioca con i tuoi pensieri,con le tue paure e le trasforma<span class="gold">"</span><span class="gold">-Un'altra dichiarazione d'amore (ft. Tormento)</span></p>
+
+                            <p class="frase"><span class="gold">"</span>non sfido la scienza, al massimo l'esistenza di Dio
+                            dato che da quando sono nato l'unico che pensa a me sono io<span class="gold">"</span><span class="gold">-Insomnia</span></p>
+
+                            <p class="frase"><span class="gold">"</span>Siamo soli, non è un segreto
+                                ma non lo dici, sei spaventato.
+                                Se non voli loro non ti vedono e tu vai in crisi, dimenticato<span class="gold">"</span><span class="gold">-Siamo soli</span></p>
+                            
+                                <p class="frase"><span class="gold">"</span>Scusa, ma mi guardo la schiena,
+                                chi mi saluta ri-saluto poi mi chiedo chi era.
+                                Non memorizzo, non mi frega un ca**o delle persone,
+                                l’ipocrisia è la peggior nemica della miseria<span class="gold">"</span><span class="gold">-Io non pago</span></p>
+
+                            <p class="frase"><span class="gold">"</span>Vogliono metterci l’uno contro l’altro
+                                Finché non gli lasceremo la Terra<span class="gold">"</span><span class="gold">-Come vuoi</span></p>
+
+                            <p class="frase"><span class="gold">"</span>Ora che quasi morto mi ritrovo qui e porto il mio peso.
+                                Ti ascolto, mi rivedo più vero di colpo mi sento leggero<span class="gold">"-Tutto quello che c'è (ft. Saint)</span></p>
+
+                            <p class="frase"><span class="gold">"</span>mentre il mondo piange la gente si vende a metà,
+                                prezzo e in mezzo metterà pure i figli per pietà<span class="gold">"-L'antidoto</span></p>
+                                    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- fine raptus 1-->
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <h1 class="titolo_dati">RAPTUS 2</h1> 
+            <!-- scheda raptus 2-->
+            <div class="accordion" id="a2">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button">
+                                <img src="./img/raptus2.jpg" alt="raptus2" width="96px" height="96px" style="margin-right: 35px;" id="raptus2_img">
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="raptus2" class="collapse show">
+                        <div class="card-body">
+                            <p class="frase"><span class="gold">"</span>Baby so che mi volevi diverso
+                                ma sappi che è pure l'inverso,
+                                infatti non sono come mi hai trovato
+                                ma sono esattamente come mi hai perso<span class="gold">"</span><span class="gold">-Rapt2s</span></p>
+                            <p class="frase"><span class="gold">"</span>Ho messo il cuore in studio,
+                                forse sono un pazzo ma tu non sei nessuno<span class="gold">"</span><span class="gold">-Brillo</span></p>
+
+                            <p class="frase"><span class="gold">"</span> Io sono un ragazzo che non ha mai avuto un ca**o nella vita tranne l’amore
+                                di mamma,
+                                lei mi dice sempre che il denaro non è niente ha solamente quel potere che ti inganna<span class="gold">"-Poveri</span></p>
+
+                            <p class="frase"><span class="gold">"</span>Dammi tutto quello che mi spetta,
+                                io non rispetto mai chi non rispetta <span class="gold">"-Freestyle21</span></p>
+                            <p class="frase"><span class="gold">"</span>La mia strada è ancora troppo lunga,
+                                guarda la mia stella che si impunta.
+                                Sono pazzo, sì è una malattia <span class="gold">"-Autovelox (ft. Gemitaiz)</span></p>
+                            <p class="frase"><span class="gold">"</span>Non è che posso dire solo le ca**ate,
+                                la verità ti fa bene quindi apprezza frate <span class="gold">"-Nessuno (ft. Jesto)</span></p>
+                            <p class="frase"><span class="gold">"</span>A me sembra che sia il mondo a scapocciare,
+                                ho il cuore in mille pezzi non si può scotchare.
+                                Questi pensano soltanto a sbocciare,
+                                poi mi chiedi perché sono asociale? <span class="gold">"-Nessuno (ft. Jesto)</span></p>
+                            <p class="frase"><span class="gold">"</span>Quando stavo male, dove ca**o stavi?
+                                La gente da me che si aspettava?
+                                Fuori scuola, mai nessuno che mi aspettava <span class="gold">"-Nessuno (ft. Jesto)</span></p>
+                            <p class="frase"><span class="gold">"</span>Voglio solamente quello che non posso avere.
+                                Non è di proposito, non vedo il costo <span class="gold">"-Gola</span></p>
+                            <p class="frase"><span class="gold">"</span>ho sempre detto qualcosa di troppo.
+                                Avrò anche esagerato però
+                                qui si chiudono a chiudere un occhio<span class="gold">"-Money (ft. Skioffi)</span></p>
+                            <p class="frase"><span class="gold">"</span>Non mi frega un ca**o a me di te,
+                                resto zitto in mezzo a tutto il chiasso <span class="gold">"-Money (ft. Skioffi)</span></p>
+                            <p class="frase"><span class="gold">"</span>Strano, tutti chiacchierano ma non sanno <span class="gold">"-Non mi ricordo di te</span></p>
+                            <p class="frase"><span class="gold">"</span>Non mi fido più delle persone,
+                                è difficile che cambierò <span class="gold">"-Non mi ricordo di te</span></p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <h1 class="titolo_dati">RAPTUS 3</h1>
+            <!-- scheda raptus 3-->
+            <div class="accordion" id="a3">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button">
+                               <img src="./img/raptus3.jpg" alt="raptus3" width="96px" height="96px">
+                            </button>
+                        </h2>
+                    </div>
+    
+                    <div id="raptus3" class="collapse show">
+                        <div class="card-body">
+                            <p class="frase"><span class="gold">"</span>Ho dipinto di rosso il viso e gli occhi così non te
+                                ne accorgi quando sanguino <span class="gold">"-Per essere vivi</span></p>
+                            <p class="frase"><span class="gold">"</span>Entra dentro al mio cuore, un labirinto, non esci
+                                pure se non ho chiuso a chiave<span class="gold">"-La mia voce</span></p>
+                            <p class="frase"><span class="gold">"</span> Chiedo solo su chi posso contare
+                                ma delle volte mi ricordo nessuno,
+                                poi mi fermo e non lo so se li merito i sogni che ho
+                                ma mi rispondo che sudo<span class="gold">"-Brutti Sogni</span></p>
+                            <p class="frase"><span class="gold">"</span>Il mondo è una me**a e c'è chi sta peggio
+                                ma a noi non interessa. C'è un universo
+                                dentro qui, nella testa, abbiamo un inferno<span class="gold">"- Exit</span></p>
+                            <p class="frase"><span class="gold">"</span>La tua più grande consolazione
+                                è prendere due like sotto una mia canzone
+                                perché hai fatto un commento davvero scemo
+                                non ci metti la faccia e nemmeno il nome,
+                                vali un ca**o <span class="gold">"-Effetto domino</span></p>
+                            <p class="frase"><span class="gold">"</span> Io avevo giurato
+                                che non avrei più dato il cuore
+                                perché chi è debole muore<span class="gold">"-A Silvia</span></p>
+                            <p class="frase"><span class="gold">"</span>I ragazzi a 13 anni scelgono il liceo,
+                                a 14 la droga perché zero stimoli <span class="gold">"-Animal</span></p>
+                            <p class="frase"><span class="gold">"</span>Se accadono cose brutte basta che non sia a noi,
+                                i bambini innocenti solo se sono i tuoi <span class="gold">"-Animal</span></p>
+                            <p class="frase"><span class="gold">"</span>Non serve la volgarità per diventare più scomodi.
+                                Siamo soli, sì, mentre ci lamentiamo degli uomini <span class="gold">"-animal</span></p>
+                            <p class="frase"><span class="gold">"</span>Darò alla gente dei ruoli
+                                perché so che con il potere l'uomo rimane sempre da solo <span class="gold">"-Inferno</span></p>
+                            <p class="frase"><span class="gold">"</span>Ho paura che...
+                                Dio non c'è davvero e l'abbiamo inventato noi,
+                                dove vanno i nostri peccati se non crediamo? <span class="gold">"-Ti am*</span></p>
+                            <p class="frase"><span class="gold">"</span>Stare vicino a chi ami credo 
+                                non sia mai una scelta <span class="gold">"-Ti am*</span></p>     
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+            <div class="row">
+                <!-- tutti i singoli-->
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <h1 class="titolo_dati singoli">Singoli</h1>
+                    <!--prima riga dei singoli-->
+                        <div class="row">
+                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                <div class="block">
+                                    <img src="./img/passala.jpg" alt="passala">
+                                    <form action="like" method="get" class="likeForm">
+                                        <button type="submit" class="btnlike" name="btnLike" value="passala"><i class="fas fa-heart"></button></i>
+                                    </form>
+                                        <h2>Passala</h2>
+                                    <p>Quando io sono uscito non ho dissato nessuno,
+                                        ho detto sono meglio io, quindi</p>
+                                  </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                <div class="block">
+                                    <img src="./img/good_vibes.jpg" alt="good_vibes">
+                                    <form action="like" method="get" class="likeForm">
+                                        <button type="submit" class="btnlike" name="btnLike" value="good vibes"><i class="fas fa-heart"></button></i>
+                                    </form>
+                                    <h2>Good vibes (ft. Gemitaiz)</h2>
+                                    <p>Me ne fotto del pubblico.
+                                        Tu mi chiami non rispondo
+                                        ma non sono occupato, non me te ‘nculo</p>
+                                  </div>
+                            </div>
+                        </div>
+                        <!--seconda riga dei singoli-->
+                        <div class="row">
+                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                <div class="block">
+                                    <img src="./img/grazie_prego_scusa.jpg" alt="grazie_prego_scusa">
+                                    <form action="like" method="get" class="likeForm">
+                                        <button type="submit" class="btnlike" name="btnLike" value="grazie prego scusa"><i class="fas fa-heart"></button></i>
+                                    </form>
+                                    <h2>Grazie Prego Scusa</h2>
+                                    <p>Di chi mi ama non mi fido giuro mamma chi mi guarda vede grana, di legarmi non mi va, no</p>
+                                  </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                <div class="block">
+                                    <img src="./img/non_ci_crede_nessuno.jpg" alt="good_vibes">
+                                    <form action="like" method="get" class="likeForm">
+                                        <button type="submit" class="btnlike" name="btnLike" value="quando non ci crede nessuno"><i class="fas fa-heart"></button></i>
+                                    </form>
+                                    <h2>Quando non ci crede nessuno</h2>
+                                    <p>Vorresti non fossi nato, però sono ostinato.
+                                        Devo vedere mille posti, vado</p>
+                                  </div>
+                            </div>
+                        </div>
+                           <!--seconda riga dei singoli-->
+                           <div class="row">
+                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                <div class="block">
+                                    <img src="./img/piove.png" alt="piove">
+                                    <form action="like" method="get" class="likeForm">
+                                        <button type="submit" class="btnlike" name="btnLike" value="piove"><i class="fas fa-heart"></button></i>
+                                    </form>
+                                    <h2>Piove</h2>
+                                    <p>Fuori piove e io no, non mi copro
+                                        Fiori sì per me, cado giù nel vuoto
+                                        Sei fuori come me
+                                        Tu sei fuori come me</p>
+                                  </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                <div class="block">
+                                    <img src="./img/trip.jpg" alt="trip">
+                                    <form action="like" method="get" class="likeForm">
+                                        <button type="submit" class="btnlike" name="btnLike" value="trip"><i class="fas fa-heart"></button></i>
+                                    </form>
+                                    <h2>Trip (ft. Nayt)</h2>
+                                    <p>Dalla metro ai meglio palchi d'Italia, non mi guardi come un alieno Scusa, quando arrivo sono sberle che partono
+                                     Lividi su pelle che macchiano</p>
+                                  </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+    
+
+    <!-- FOOTER-->
+    <div class="container-fluid">
+        <section style="height:80px;"></section>
+        <!----------- Footer ------------>
+        <footer class="footer-bs">
+            <div class="row">
+                <div class="col-md-3 footer-brand animated fadeInLeft">
+                    <h5>info sul sito <i class="lni-pulse"></i></h5>
+                    <p>Questo sito nasce principalmente dalla passione per Nayt.
+                        è stato creato anche per facilitare l'utenza a trovare frasi o informazioni su di lui e sulla sua carriera.
+                        Inoltre il sito può essere un buon inizio per chi ha appena conosciuto Nayt.
+                    </p>
+                </div>
+                <div class="col-md-4 footer-nav animated fadeInUp">
+                    <h4>Nayt <i class="lni-pulse"></i></h4>
+                    <div class="col-md-6">
+                        <ul class="pages">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="biografia.html">Biografia</a></li>
+                            <li><a href="">Frasi</a></li>
+                            <li><a href="altro.php">Altro</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="list">
+                            <li><a href="https://www.instagram.com/nayt/" target="_blank"><i
+                                        class="fab fa-instagram"></i></a>
+                                <a href="https://open.spotify.com/artist/7tmTvmqgTBcX88ZrSHByrD?si=cwXaBLUNTMuZ7Zyk1bj47g" target="_blank"><i
+                                        class="fab fa-spotify"></i></a>
+                                    <a href="https://twitter.com/nayt1ne" target="_blank"><i
+                                                class="fab fa-twitter"></i></a>
+                                <a href="https://www.youtube.com/user/torredicontrollo21/videos" target="_blank"><i
+                                        class="fab fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-2 footer-social animated fadeInDown">
+                    <h4>Seguimi <i class="lni-pulse"></i></h4>
+                    <ul>
+                        <li><a href="https://www.instagram.com/naytunofficialsite/" target="_blank">Nayt Unofficial</a></li>
+                        <li><a href="https://www.instagram.com/dna.iele/" target="_blank">Daniele</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footer-ns animated fadeInRight">
+                    <h4>Informazioni</h4>
+                    <p>Questo sito non ha scopo di lucro. Al suo interno non sono inserite pubblicità e non ci sono
+                        cookie attivi. In caso di problemi o domande non esitate a contattarci via email.</p>
+                        <p><a href="mailto:naytunofficial@gmail.com"><i class="far fa-envelope"></i></a></p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>

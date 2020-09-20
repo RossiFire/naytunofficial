@@ -1,0 +1,132 @@
+  /* SCROLLBAR
+  ===================================================================================*/
+    /* width */
+::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background:  transparent; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background:  #f1c40f; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background:  #f1c40fbb; 
+  }
+
+    	
+/* 	ALTRO
+=========================*/
+    	
+    	
+    	body{
+    	  background-color: #222f3e !important;
+    	}
+    	.errore{
+    		text-align:center;
+    		text-transform: uppercase;
+    	    font: normal 100%/1.5 "Work Sans", sans-serif;
+    	    font-size: 22px;
+    	    margin-top: 100px;
+    	    color: #f1c40f;
+    	}
+    
+    	.like{
+    		text-align:center;
+    		text-transform: uppercase;
+    	    font: normal 100%/1.5 "Work Sans", sans-serif;
+    	    font-size: 20px;
+    	    margin-top: 30px;
+    	    color: white;
+    	}
+    
+    	.consigliati{
+    		cursor: pointer;
+    		text-align:center;
+    		text-transform: uppercase;
+    	    font: normal 100%/1.5 "Work Sans", sans-serif;
+    	    font-size: 20px;
+    	    text-align: center;
+    	    margin-top: 20px;
+    	    color: white;
+    	}
+    	
+    	a, i{
+    	    color: rgba(223, 223, 223, 0.7);
+    	    text-decoration-line: none;
+    	    font-weigth: bold;
+    	}
+    	a:hover, i:hover{
+    		color: rgba(223, 223, 223);
+    	    text-decoration-line: none;
+    	    font-weigth: bold;
+    	}
+    	.errore button{
+  			background-color: transparent;
+  			color: rgba(223, 223, 223, 0.7);
+  			margin-right: 10px;
+  			border: none;
+    	}
+    	.errore a{
+    	margin-left: 10px;
+    	}
+    	.errore a:hover{
+    	color: rgba(223, 223, 223);
+    	}
+    	.titolo_dati{
+    		text-align: center !important;
+    		text-transform: uppercase;
+    		font-size: 25px;
+    	}
+    	.nav-btn{
+  color: black;
+  text-align: center !important;
+  background-color: transparent;
+  font: normal 100%/1.5 "Work Sans", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: all .2s;
+}
+.nav-btn:hover{
+    color: black;
+    background: rgba(223, 223, 223, 0.712);
+    transition: all .4s;
+}
+.nav-btn:focus, .nav-btn:active{
+  outline: 0 !important;
+  box-shadow: none !important;
+}
+    	
+    	
+    	
+    @media (max-width: 768px) {
+    	.errore, .like, .consigliati{
+    		font-size: 13px !important;
+    		padding: 10px !important;
+    	}
+    	.titolo_dati{
+    		font-size: 18px !important;
+    	}
+    	.errore button, .errore a{
+    		font-size: 20px !important;
+    		margin-bottom: 30px;
+    	}
+	}
+    	
+    	
+    	
+    	
+    
+    
+    @media (max-width: 991px){
+  		.brand{
+   			display: none !important;
+  		}
+}
+    

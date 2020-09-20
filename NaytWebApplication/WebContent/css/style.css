@@ -1,0 +1,175 @@
+@font-face {
+  font-family: titolo;
+  src: url(../deadpack!\ DEMO.ttf) format("truetype");
+}
+ 
+ 
+ @import url('https://fonts.googleapis.com/css?family=Work+Sans&display=swap');
+*, html{
+  padding: 0;
+  box-sizing: border-box !important;
+  zoom: 0% !important;
+  margin: 0 !important;
+}
+body, html {
+  height: 100%;
+}
+body{
+  background-color: #222f3e !important;
+}
+.nav-btn{
+  color: black;
+  text-align: center !important;
+  background-color: transparent;
+  font: normal 100%/1.5 "Work Sans", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: all .2s;
+  border: 2px solid transparent;
+}
+.nav-btn:hover{
+    color: black;
+    background: rgba(223, 223, 223, 0.712);
+    transition: all .4s;
+}
+.nav-item form{
+	margin: 0 !important;
+}
+.nav-btn:focus, .nav-btn:active{
+  outline: 0 !important;
+  box-shadow: none !important;
+}
+
+  /* SCROLLBAR
+  ===================================================================================*/
+    /* width */
+::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background:  transparent; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background:  #f1c40f; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background:  #f1c40fbb; 
+  }
+
+  /* IMMAGINE DI SFONDO
+  ===================================================================================*/
+    /* background image*/ 
+.bg {
+    /* The image used */
+    background-image: url(../img/nayt.jpg);
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/*      TESTO AL CENTRO DELLA FOTO
+========================================================================================*/
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* Position text in the middle of the page/image */
+.bg-text {
+  font-size: 90px !important;
+  font: normal 100%/1.5 "Work Sans", sans-serif;
+ /* font-family: 'titolo'; */
+  text-transform: uppercase;
+ /* background-color: rgba(255, 255, 255, 0.788);
+  border: 3px solid black; */
+  color: #f1c40f;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  padding: 20px;
+  text-align: center;
+  transition: all 0.5s;
+  font-weight: bolder;
+  letter-spacing: 60px;
+}
+  
+  /* PRESENTAZIONE
+  ===================================================================================*/
+  .titolo_dati {
+    color: #e0dfdc;
+    text-shadow: 0 -1px 0 #fff, 0 1px 0 black, 0 2px 0 black, 0 3px 0 black, 0 4px 0 black, 0 5px 0 black, 0 6px 0 black, 0 7px 0 black, 0 8px 0 black, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 black, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212, 0 22px 30px rgba(0, 0, 0, 0.9);
+  }
+.presentazione{
+    background-color: #222f3e;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+.info_personali{
+    margin-top: 25px !important;
+    text-align: center !important;
+}
+#titolo{
+    font: normal 100%/1.5 "Work Sans", sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    letter-spacing: 0.35rem;
+}
+.dati{
+    font: normal 100%/1.5 "Work Sans", sans-serif;
+    color: white;
+    font-size: 19px;
+    margin-top: 20px;
+}
+.user_dati{
+    text-transform: uppercase;
+    color: #f1c40f;
+}
+.titolo_dati{
+    margin-top: 120px !important;
+    font: normal 100%/1.5 "Work Sans", sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 0.35rem;
+    margin: 30px 0px !important;
+}
+.lni{
+    color: white;
+    font-size: 20px;
+}
+
+
+@media (max-width: 768px){
+  .bg-text{
+    font-size: 30px !important;
+    letter-spacing: 10px !important;
+  }
+  .nav-item{
+    margin: 0px !important;
+  }
+  .titolo_dati{
+    font-size: 22px !important;
+  }
+  p.dati{
+    font-size: 18px !important;
+  }
+}

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nayt | Biografia</title>
+    <!--======= css link =========-->
+    <link rel="stylesheet" href="./css/bio.css">
+    <link rel="stylesheet" href="./css/utili.css">
+    <link rel="shortcut icon" href="./img/LOGO.png" type="image/x-icon">
+    <!--======== bootstrap =========-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <!--========= line icons ======-->
+    <link rel="stylesheet" href="https://cdn.lineicons.com/1.0.1/LineIcons.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+    <script src="./btn.js"></script>
+
+
+    <script>
+    $(document).ready(function(){
+	var my_posts = $("[rel=tooltip]");
+
+	var size = $(window).width();
+	for(i=0;i<my_posts.length;i++){
+		the_post = $(my_posts[i]);
+
+		if(the_post.hasClass('invert') && size >=767 ){
+			the_post.tooltip({ placement: 'left'});
+			the_post.css("cursor","pointer");
+		}else{
+			the_post.tooltip({ placement: 'rigth'});
+			the_post.css("cursor","pointer");
+		}
+	}
+});
+    </script>
+</head>
+
+<body>
+        <nav class="navbar navbar-expand-lg" id="navbar">
+            <button class="navbar-toggler" id="btnLogo" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <img src="./img/LOGOBLACK.png" width="32px" height="32px">
+              </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active" id="home">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item" id="bio">
+                        <a class="nav-link" href="">Biografia</a>
+                    </li>
+                    <li class="nav-item" id="frasi">
+                        <a class="nav-link" href="frasi.html">Frasi</a>
+                    </li>
+                    <li class="nav-item" id="altro">
+                        <form action="commenti" method="get">
+                            <button type="submit" class="nav-link nav-btn" style="margin: auto !important">Altro</button>
+                        </form>
+                    </li>
+                    <li class="nav-item" id="user">
+                        <a class="nav-link" href="user.html">Login</a>
+                    </li>
+                      <li class="nav-item" id="pag_utente">
+                        	<form action="login" method="post">
+	                           <button type="submit" class="nav-btn nav-link" style="margin: auto !important" name="btnLog" value="1">Utente</button>
+                        	</form>
+                        </li>
+                </ul>
+                <a class="brand" style="margin: 0; float: none; text-align:center; display: none !important" href="index.html">
+                    <img src="./img/LOGOBLACK.png" width="50px" height="50px">
+                  </a>
+            </div>
+        </nav>
+    
+
+    <div class="biografia">
+        <h1 class="titolo_dati">Biografia</h1>
+        <div class="elenco">
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="#">Inizi</a></li>
+                  <li class="breadcrumb-item"><a href="#magg">Maggiorenne</a></li>
+                  <li class="breadcrumb-item"><a href="#ascesa">Ascesa</a></li>
+                </ol>
+              </nav>
+        </div>
+        <p class="testo_bio"><span class="gold">Nayt</span>, all'anagrafe William Mezzanotte, nasce a Isernia nel 1994 ma si
+            trasferisce a Roma da
+            giovanissimo. Anche se nella scena rap ha ottenuto grandi successi solo negli ultimi anni, Nayt si avvicina da
+            subito alla cultura hip hop e in particolare al rap.
+            Dal 2009 infatti comincia a incidere i primi brani ottenendo presto un discreto seguito, sia per i testi
+            frutto di idee ben chiare sia per il modo di fare rap, dotato di una spiccata tecnica e un approccio al flow
+            originale, utilizzando metriche originali e mai viste fino a quel momento. <br>
+            Nel febbraio del 2011 pubblica il suo primo videoclip sul brano <span class="gold">No
+                Story</span>, il quale riscuote gran successo. La grande occasione di Nayt arriva con un'offerta di
+            contratto dalla
+            <span class="gold">40 Ladroni Records</span>, etichetta specializzata in rap italiano fondata da <span
+                class="gold">G-LU</span>,
+            artista italoamericano che si muove tra hip hop, r’n’b e soul. <br>
+            G-LU, come molti altri artisti a quel tempo, ritiene Nayt uno dei più talentuosi rapper della nuova
+            generazione e lo sceglie come artista di punta dell’etichetta. Il primo album di Nayt, <span class="gold">Nayt
+                One</span>, prodotto da
+            <span class="gold">3D</span> e G-LU, contiene dodici brani e vede le collaborazioni di
+            <span class="gold">Primo</span> dei <span class="gold">Cor Veleno</span>, <span class="gold">Emis Killa</span>,
+            <span class="gold">Zz</span> e dello stesso
+            G-LU nelle parti corali. Nayt considera il suo rap come una valvola di sfogo attraverso cui racconta se stesso e
+            il mondo che lo circonda. Modelli di riferimento a parte – uno su tutti, Jay Z – il giovane rapper trae
+            ispirazione dai beat e con i suoi produttori è sempre alla ricerca di nuovi suoni che possano valorizzare le sue
+            rime.
+            </p>
+            <div class="row" id="magg">
+                <div class="col-lg-2 col-md-4 col-sm-1" style="text-align: center;">
+                   <a href="https://open.spotify.com/track/63XFqygYwXTng44ZDXu1ig?si=gugKnVXyT9iJSB2C5bOLfA" target="_blank"><img src="./img/no_story.jpg" class="img_bio" alt="No_story" width="200px" height="200px" data-toggle="tooltip" data-placement="top" title="No Story"></a>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-1" style="text-align: center;">
+                   <a href="https://open.spotify.com/track/4RLoPdo8jf1Bu9mkgIKSt1?si=fa-uBz4iSDqZzhoJLzfuig" target="_blank"><img src="./img/liberi.jpg" class="img_bio" alt="liberi" width="200px" height="200px" data-toggle="tooltip" data-placement="top" title="Liberi"></a>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-1" style="text-align: center;">
+                   <a href="https://open.spotify.com/album/15E7p202k1nrZEoSEyYsDo?si=anruafwfS0Oh3w8vH_nDkw" target="_blank"> <img src="./img/nayt_one.jpg" class="img_bio" alt="nayt_one" width="200px" height="200px" data-toggle="tooltip" data-placement="top" title="Nayt One"></a>
+                </div>
+        </div>
+        <p class="testo_bio">
+            A inizio 2013 ha pubblicato <span class="gold">40</span>, il suo primo singolo da maggiorenne, un brano
+            manifesto in cui Zz, rapper
+            newyorkese trapiantato a Roma, e G-LU supportano Nayt per parlare della loro crew. A questo segue <span
+                class="gold">Shitty Life
+                Mixtape</span>, un nuovo progetto del rapper romano. Tra gli ospiti <span class="gold">Gemitaiz</span>,
+            Primo dei Cor Veleno,
+            <span class="gold">Canesecco</span> e <span class="gold">Madman</span>. Un lavoro in cui il rap di Nayt, come
+            vuole la tradizione dei mixtape, viaggia su produzioni
+            prese in prestito da nomi grossi come Jay Z e Kanye West, 50 cent, Missy Elliott, Wiz Khalifa, Evidence e altri.
+            <br>
+    
+            Il 2014 è l'anno di <span class="gold">Six of Sixteen</span> (inizialmente doveva uscire l'album <span class="gold">So.Lo</span>, poi il progetto fù abbandonato, come scritto anche in un post di Nayt su Facebook), secondo album di Nayt, primo da maggiorenne e senza featuring, anticipato o metà
+            ottobre 2013 dal singolo "Liberi". <br>
+    
+            Il duo Nayt-3D intanto ha continuato ad affermarsi e ha portato il rapper a firmare per l'etichetta <span
+                class="gold">VNT1</span>, fondata da
+            3D, nella quale Nayt è diventato socio e volto. Nel 2016 esce il disco <span class="gold">Un bacio</span>
+            (sempre in quell'anno esce anche Un bacio deluxe edition, che contiene 8 testi in più). Nasce Anche <span
+                class="gold">Raptus</span>,
+            l'attuale Trilogia di dischi che ha riscosso grande successo in tutta Italia, Progetto di punta di Nayt. 
+
+            <div class="row" id="ascesa">
+                <div class="col-lg-2 col-md-4 col-sm-1" style="text-align: center;">
+                   <a href="https://open.spotify.com/album/6mhNy2vS4p3lIogzZ8wad5?si=mrEhD7bsSHWGHYAXutti9w" target="_blank"><img src="./img/raptus.jpg" class="img_bio" alt="raptus" data-toggle="tooltip" data-placement="top" title="Raptus"></a>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-1" style="text-align: center;">
+                   <a href="https://open.spotify.com/album/4tyf98inReHLMjbO3W7ODe?si=06w5XcljRQqDIi_XWJQIJw" target="_blank"><img src="./img/raptus2.jpg" class="img_bio" alt="raptus2" data-toggle="tooltip" data-placement="top" title="Raptus 2"></a>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-1" style="text-align: center;">
+                   <a href="https://open.spotify.com/album/04gdaRtg56whGgaaPnUsr4?si=iCAazzJDS1GiC-M6g8fHRw" target="_blank"><img src="./img/raptus3.jpg" class="img_bio" alt="raptus3" data-toggle="tooltip" data-placement="top" title="Raptus 3"></a>
+                </div>
+            </div>
+            </p>
+            <p class="testo_bio">
+            L'ascesa nel panorama rap italiano si ha in modo progressivo con la pubblicazione nel 2017 di <span class="gold">OPS</span>,
+            famosa per il suo extrabeat iniziale e successivamente con il singolo <span class="gold">Gli occhi della
+                tigre</span>, nel 2018 (inserito poi tra le tracce di Raptus 3 ). è il suo primo singolo a ottenere il <span class="gold">Disco d'Oro</span> e <span
+                class="gold">Disco di PLatino</span>. Diventa molto conosciuta anche la canzone <span class="gold">Piove</span>, 
+                uscita nel 2017. Seguono poi
+            partecipazioni a vari programmi, come <span class="gold">Real talk</span> (il video so youtube ha attualmente
+            più di 4 milioni di visualizzazioni),
+            <span class="gold">Radio Deejay</span> e <span class="gold">Radio 105</span>. </p>
+
+                <div class="row">
+                    <div class="col-lg-2 col-md-4 col-sm-1" style="text-align: center;">
+                       <a href="https://open.spotify.com/track/0eczHniJguffShMNltOqMo?si=B_yStroGR-SH1fu1LKldvA" target="_blank"><img src="./img/occhi_della_tigre.jpg" class="img_bio" alt="occhi_della_tigre" data-toggle="tooltip" data-placement="top" title="Occhi della tigre"></a>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-1" style="text-align: center;">
+                       <a href="https://open.spotify.com/track/0EMhBAtDSKQ4NBT6tgmcY7?si=VZP5zauCRa67ztaSNelbHQ" target="_blank"> <img src="./img/piove.png" class="img_bio" alt="Piove" data-toggle="tooltip" data-placement="top" title="Piove"></a>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-1" style="text-align: center;">
+                       <a href="https://open.spotify.com/track/4s5rr8IDii85x5MSszoz3l?si=4rs2HV0nRBmEZQTxpTBd8A" target="_blank"><img src="./img/ops.jpg" class="img_bio" alt="OPS" data-toggle="tooltip" data-placement="top" title="OPS"></a>
+                    </div>
+                </div>
+            <p class="testo_bio">
+            Il 15 Marzo 2019 esce <span class="gold">Raptus 3</span>, l'ultimo capitolo della trilogia, pubblicata dalla
+            <span class="gold">Jive</span>,
+            etichetta storica del panorama Sony. Il disco debutta alla posizione numero 2 della classifica italiana e tutti
+            i brani contenuti all'interno
+            entrano nella top 50 di spotify italia. Nella prima settimana Il disco raggiunge 35 milioni di streaming,
+            facendolo entrare di diritto
+            tra i big della scena rap italiana. <br>
+            Nell'inverno del 2019 Nayt fa i suoi primi due concerti a Roma e Milano, andando sold out in entrambi (per la precisione, due concerti a Roma e uno a Milano, tutti andati sold out). <br>
+            Un grande punto di forza di Nayt, oltre alla sua tencina inimitabile, è la collaborazione ormai affermata con 3D.
+            Insieme riescono a creare la giusta melodia per il flow di Nayt, facendo attenzione anche ai piccoli dettagli. Il risultato finale è
+            un prodotto che riesce a distinguersi dal resto della scena e che sta piacendo sempre a più persone.
+        </p>
+    </div>
+    <a href="mailto:daniele.rossino10@gmail.com"><p class="gold" id="errori">In caso di errori riguardanti la biografia o errori ortografici non esitate a contattarmi</p></a>
+
+
+
+    <!-- FOOTER-->
+    <div class="container-fluid">
+        <section style="height:80px;"></section>
+        <!----------- Footer ------------>
+        <footer class="footer-bs">
+            <div class="row">
+                <div class="col-md-3 footer-brand animated fadeInLeft">
+                    <h5>info sul sito <i class="lni-pulse"></i></h5>
+                    <p>Questo sito nasce principalmente dalla passione per Nayt.
+                        è stato creato anche per facilitare l'utenza a trovare frasi o informazioni su di lui e sulla sua carriera.
+                        Inoltre il sito può essere un buon inizio per chi ha appena conosciuto Nayt.
+                    </p>
+                </div>
+                <div class="col-md-4 footer-nav animated fadeInUp">
+                    <h4>Nayt <i class="lni-pulse"></i></h4>
+                    <div class="col-md-6">
+                        <ul class="pages">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="">Biografia</a></li>
+                            <li><a href="frasi.html">Frasi</a></li>
+                            <li><a href="altro.php">Altro</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="list">
+                            <li><a href="https://www.instagram.com/nayt/" target="_blank"><i
+                                        class="fab fa-instagram"></i></a>
+                                <a href="https://open.spotify.com/artist/7tmTvmqgTBcX88ZrSHByrD?si=cwXaBLUNTMuZ7Zyk1bj47g" target="_blank"><i
+                                        class="fab fa-spotify"></i></a>
+                                    <a href="https://twitter.com/nayt1ne" target="_blank"><i
+                                                class="fab fa-twitter"></i></a>
+                                <a href="https://www.youtube.com/user/torredicontrollo21/videos" target="_blank"><i
+                                        class="fab fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-2 footer-social animated fadeInDown">
+                    <h4>Seguimi <i class="lni-pulse"></i></h4>
+                    <ul>
+                        <li><a href="https://www.instagram.com/naytunofficialsite/" target="_blank">Nayt Unofficial</a></li>
+                        <li><a href="https://www.instagram.com/dna.iele/" target="_blank">Daniele</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footer-ns animated fadeInRight">
+                    <h4>Informazioni</h4>
+                    <p>Questo sito non ha scopo di lucro. Al suo interno non sono inserite pubblicità e non ci sono
+                        cookie attivi. In caso di problemi o domande non esitate a contattarci via email.</p>
+                        <p><a href="mailto:naytunofficial@gmail.com"><i class="far fa-envelope"></i></a></p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>
